@@ -27,7 +27,7 @@ config :libcluster,
   topologies: [
     example: [
       strategy: Cluster.Strategy.Epmd,
-      config: [hosts: [:ec2_tagname], ]
+      config: [hosts: [], ]
     ]
   ]
 

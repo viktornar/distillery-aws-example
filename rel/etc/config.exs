@@ -48,7 +48,9 @@ config :libcluster,
   topologies: [
     example: [
       strategy: ClusterEC2.Strategy.Tags,
-      ec2_tagname: "aws:cloudformation:stack-name",
-      ec2_tagvalue: "#{app}-#{env}",
+      condfig: [
+        ec2_tagname: "aws:cloudformation:stack-name",
+        ec2_tagvalue: "#{app}-#{env}",
+      ]
     ]
   ]
