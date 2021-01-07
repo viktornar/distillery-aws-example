@@ -50,7 +50,7 @@ config :libcluster,
       strategy: ClusterEC2.Strategy.Tags,
       config: [
         ec2_tagname: "aws:cloudformation:stack-name",
-        ec2_tagvalue: "#{app}-#{env}",
+        ec2_tagvalue: "#{app}-#{env}"
       ]
     ]
   ]
