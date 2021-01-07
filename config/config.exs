@@ -27,7 +27,7 @@ config :logger, :console,
 #   topologies: [
 #     example: [
 #       strategy: Cluster.Strategy.Epmd,
-#       config: []
+#       config: [hosts:[]]
 #     ]
 #   ]
 
