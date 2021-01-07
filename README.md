@@ -1,6 +1,6 @@
 # Distillery AWS Example App
 
-This application is intended to be used with the AWS guide in the Distillery documentation.
+Testing build. This application is intended to be used with the AWS guide in the Distillery documentation.
 
 ## Running Locally
 
