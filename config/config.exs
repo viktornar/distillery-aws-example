@@ -23,13 +23,13 @@ config :logger, :console,
   format: "$time $metadata[$level] $message\n",
   metadata: [:user_id]
 
-# config :libcluster,
-#   topologies: [
-#     example: [
-#       strategy: Cluster.Strategy.Epmd,
-#       config: [hosts: []]
-#     ]
-#   ]
+config :libcluster,
+  topologies: [
+    example: [
+      strategy: Cluster.Strategy.Epmd,
+      config: [hosts: [:ec2_tagname], ]
+    ]
+  ]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
