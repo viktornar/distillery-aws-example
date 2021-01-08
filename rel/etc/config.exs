@@ -61,7 +61,7 @@ config :libcluster,
       # The selected clustering strategy. Required.
       strategy: Cluster.Strategy.Epmd,
       # Configuration for the provided strategy. Optional.
-      config: [hosts: [:"a@10.0.0.242", :"b@10.0.1.205"]],
+      config: [hosts: [:"a@54.170.146.177", :"b@34.244.3.242"]],
       # The function to use for connecting nodes. The node
       # name will be appended to the argument list. Optional
       connect: {:net_kernel, :connect_node, []},
